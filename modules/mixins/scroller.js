@@ -53,6 +53,8 @@ export default {
     let horizontal = props.horizontal
     let scrollOffset = utils.scrollOffset(containerElement, target, horizontal) + (props.offset || 0);
 
+    scrollOffset += (props.scrollOffset || 0);
+
     /*
      * if animate is not provided just scroll into the view
      */
@@ -64,6 +66,8 @@ export default {
       if (containerElement === document) {
         if (props.horizontal) {
           window.scrollTo(scrollOffset, 0);
+
+
         } else {
           window.scrollTo(0, scrollOffset);
         }
