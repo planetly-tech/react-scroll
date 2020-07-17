@@ -247,6 +247,7 @@ class Section extends React.Component {
                     Scroll to element within container
                   </a>
                 </li>
+                <li><Link activeClass="active" className="test10" to="offset" spy={true} offset={100} scrollOffset={25}>Test offset</Link></li>
               </ul>
             </div>
           </div>
@@ -358,6 +359,8 @@ class Section extends React.Component {
             >
               first element inside container
             </Element>
+
+        <a onClick={this.scrollToTop}>To the top!</a>
 
             <div
               id="scroll-container-second-element"

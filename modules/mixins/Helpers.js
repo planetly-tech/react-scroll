@@ -19,6 +19,7 @@ const protoTypes = {
   spy: PropTypes.bool,
   smooth: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
   offset: PropTypes.number,
+  scrollOffset: PropTypes.number,
   delay: PropTypes.number,
   isDynamic: PropTypes.bool,
   onClick: PropTypes.func,
@@ -217,7 +218,7 @@ const Helpers = {
 
     Scroll.propTypes = protoTypes;
 
-    Scroll.defaultProps = { offset: 0 };
+    Scroll.defaultProps = { offset: 0, scrollOffset: 0 };
 
     return Scroll;
   },

@@ -2,6 +2,7 @@
 	margin: 0 !important;
 	padding: 0 !important;
 }
+
 .element {
 	height:1000px;
 	background-color: #ededed;
@@ -13,6 +14,10 @@
 
 .element.no-padding{
 	padding-top:0;
+}
+
+#offset {
+	padding-top:155px;
 }
 
 .active {
