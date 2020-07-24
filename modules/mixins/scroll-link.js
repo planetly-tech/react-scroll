@@ -14,6 +14,7 @@ const protoTypes = {
   horizontal: PropTypes.bool,
   smooth: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
   offset: PropTypes.number,
+  scrollOffset: PropTypes.number,
   delay: PropTypes.number,
   isDynamic: PropTypes.bool,
   onClick: PropTypes.func,
